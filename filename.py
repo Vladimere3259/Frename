@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import os
 import sys
 
@@ -19,7 +21,7 @@ for i in content_list :
     if(".jpg" in i or ".JPG" in i) :
         
         y = '{:04d}'.format(x)
-        print "mv -v \""+i+"\" \"" + wd + " " + y + ".jpg\""
+        print ("mv -v \""+i+"\" \"" + wd + " " + y + ".jpg\"")
 
         x+=1
         
